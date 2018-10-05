@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+
+      <div class="intro">
+
+        <div class="row">
+          <h1>{{ entry.title }}</h1>
+          <h4>Posted by: {{ entry.author }} on {{ entry.postDate | date('M d, Y')}}</h4>
+        </div>
+
+      </div>
+
+      <div class="case-study">
+
+        <div class="row">
+          <h1>{{ entry.caseStudyIntroduction }}</h1>
+          {{ entry.caseStudyBody }}
+        </div>
+
+      </div>
+
+{% endblock %}

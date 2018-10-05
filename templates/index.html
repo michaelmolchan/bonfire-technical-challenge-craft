@@ -1,1 +1,38 @@
-homepage
+{% extends 'layout.html' %}
+
+{% block main %}
+
+      <div class="intro">
+
+        <div class="row">
+          <h1>Why Hello There</h1>
+          <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</h4>
+        </div>
+
+      </div>
+
+      <div id="buttons">
+        <button id="show-all" class="btn active">show all</button>
+        <button id="show-even" class="btn">show even</button>
+        <button id="show-odd" class="btn">show odd</button>
+      </div>
+
+      <div class="container">
+
+        {% for entry in craft.entries.section('studies').limit(10).all() %}
+
+        <div class="section {% for category in entry.sortCategory %}{{ category.title }}{% endfor %}">
+          <h1>
+            {{ entry.title }}
+          </h1>
+          <p>
+            {{ entry.caseStudyIntroduction }}
+          </p>
+          <a href="{{ entry.url }}"><button>view the case study</button></a>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+{% endblock %}
