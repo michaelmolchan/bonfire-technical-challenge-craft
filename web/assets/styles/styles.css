@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 170px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  float: left;
+}
+
+nav a {
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  transition: 0.4s;
+}
+
+.nav-logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 170px;
+  transition: 0.4s;
+}
+
+.nav-logo .light {
+  font-weight: normal;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: middle;
+  line-height: 170px;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  color: #fdecca;
+}
+
+nav a:focus {
+  color: #fdecca;
+}
+
+/* MOBILE NAV START */
+
+.overlay-menu {
+  background: #1b2434;
+  color: rgb(13, 26, 38);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 15px;
+  transform: translateX(-100%);
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+
+.overlay-menu ul,
+.overlay-menu li {
+  display: block;
+  position: relative;
+}
+
+.overlay-menu li a {
+  display: block;
+  font-size: 3em;
+  letter-spacing: 4px;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: white;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.overlay-menu li a:hover,
+.overlay-menu li a:active {
+  color: #fdecca;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+/* MOBILE NAV END */
+
+.intro {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../images/mountain-background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 427px;
+  padding-top: 120px;
+}
+
+.intro .row {
+  padding: 20px 20px 25px;
+  margin: 0 auto;
+  width: 42%;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #fff;
+  font-size: 54px;
+  line-height: 38px;
+}
+
+.intro h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 28px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#buttons {
+  width: 100%;
+  margin-top: -30px;
+  text-align: center;
+  font-size: 0;
+}
+
+/* Style the buttons */
+.btn {
+  text-transform: uppercase;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  background-color: #696579;
+  border: none;
+  width: 175px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* Style the active class, and buttons on click */
+.active {
+  background-color: #fdecca;
+  color: #52485d;
+  font-weight: bold;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+  outline: 0;
+}
+
+.container {
+  margin: 55px 15px 15px 15px;
+  text-align: center;
+}
+
+/* box buttons */
+.section button {
+  opacity: 0;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #696579;
+  border: none;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+.section {
+  display: inline-block;
+  vertical-align: middle;
+  width: 29%;
+  box-sizing: border-box;
+  padding: 75px 30px 20px;
+  border-radius: 3px;
+  border-bottom: 2px solid #e5ecee;
+  border-top: 3px solid rgba(199, 72, 107, 0);
+  margin: 25px 20px 25px 20px;
+  min-height: 325px;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.section h1 {
+  text-transform: uppercase;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #aaaeb6;
+}
+
+.section p {
+  text-transform: uppercase;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #696579;
+}
+
+.case-study {
+  max-width: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* background-size: 100%;
+  background-repeat: no-repeat; */
+  /* min-height: 427px; */
+  /* padding-top: 120px; */
+}
+
+.case-study .row {
+  padding: 40px 20px 25px;
+  margin: 0 auto;
+  width: 42%;
+}
+
+.case-study h1 {
+  text-transform: uppercase;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  color: #696579;
+}
+
+.case-study h4 {
+  color: #696579;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 28px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+@media (max-width: 1150px) {
+  .section {
+    float: none;
+    width: auto;
+  }
+
+  .intro {
+    background-image: url("../images/mountain-background-mobile.jpg");
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .intro h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .intro .row {
+    padding: 20px 20px 25px;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro h1 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .intro h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .intro .row {
+    padding: 20px 20px 25px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  header {
+    background: #1b2434;
+    height: 93px;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+    position: fixed;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .nav-logo a {
+    line-height: 93px;
+  }
+
+  .menuIcon {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 45px;
+    height: 50px;
+    width: 50px;
+    z-index: 12;
+  }
+
+  /* Icon Bars */
+  .menu-icon-middle {
+    background: rgb(250, 250, 250);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+  }
+
+  .menu-icon-top {
+    background: rgb(250, 250, 250);
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: 4px;
+    width: 30px;
+  }
+
+  .menu-icon-bottom {
+    margin-top: 0;
+    background: rgb(250, 250, 250);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 4px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 560px) {
+  .btn {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .intro {
+    background-image: url("../images/mountain-background-mobile-2.jpg");
+  }
+}
